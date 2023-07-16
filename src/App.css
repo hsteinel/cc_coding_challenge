@@ -1,0 +1,45 @@
+
+.content {
+    padding: 82px 82px 0 82px;
+    font-family: Inter, sans-serif;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+
+input:focus {
+    outline: none !important;
+    border: 2px solid rgb(127, 211, 139);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+h2 {
+    color: #0C1F37;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    margin: 0;
+}
+
+h3 {
+    color: #0C1F37;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0;
+}
