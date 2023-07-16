@@ -1,70 +1,63 @@
-# Getting Started with Create React App
+# Cinema Calc Coding Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### by Hannes Steinel
 
-## Available Scripts
+This is my solution of your coding challenge.
 
-In the project directory, you can run:
+## Run
+
+To run the project you can execute locally the following command:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To build a releasable project run:
 
 ### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The overall structure of the code is that all components, assets, models and stores are in separate folders.
+Main files like index.js and App.js are on the root folder-level.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+I decided in this small project to use plain js and css and not for example **tailwind**.
+So i saved all .css files next to the .js files.
+The general folder structure is level oriented. So models, application and ui are in seperated folders.
 
-### `npm run eject`
+## State
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+I used [Zustand](https://docs.pmnd.rs/zustand/getting-started/introduction) as a state management.
+This is a very small and easy to use state management for small project so perfect for this challenge.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## BigNumbers.js
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+BigNumbers.js is used for the float problem.
+The computer is not able to calculate decimal numbers so there are workarounds.
+A computer calculates first the base and then the numbers after the point.
+BigNumbers.js have a higher precision on calculation big and small numbers.
+For financial applications it is necessary to have a precise calculation.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Design
 
-## Learn More
+I created the design of my coding challenge with a large reference to your software, but I tried to use my own touch.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Before coding, I created a design in Figma, so I wouldn't have any big design changes while coding.
+Actually I also designed a mobile version. But due to time constraints this was no longer programmable.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+**I tried to create a pleasant and open design.**
 
-### Code Splitting
+## Tasks
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+My tasks were:
 
-### Analyzing the Bundle Size
+1. Define a state management library
+2. Define global settings (background color, page padding, )
+3. Set up the folder structure
+4. Code the header
+5. Code main components
+6. Bring the components in the layout
+7. Implement the state management
+8. Do bug fixing
+9. Test it
+10. Write this file
+11. Write the mail for you
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
